@@ -130,7 +130,6 @@ int main(int argc, char *argv[])
         fwrite(imgdata[i],infoheader.width*sizeof(gray8Pixel),1,output_file_ptr);
         fwrite(&pad,sizeof(char),paddingsize,output_file_ptr);
     }
-}
 
     fclose(file);
     fclose(output_file_ptr);
